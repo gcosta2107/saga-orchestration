@@ -11,10 +11,6 @@ public class JsonUtil {
 
     private final ObjectMapper objectMapper;
 
-    public JsonUtil(ObjectMapper objectMapper) {
-        this.objectMapper = objectMapper;
-    }
-
     public String toJson(Object object){
         try {
             return objectMapper.writeValueAsString(object);
